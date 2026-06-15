@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API 라이브러리 - API Block</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&family=Urbanist:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html"><i class="fa-solid fa-cubes"></i>API BLOCK</a></div>
+        <nav>
+            <ul>
+                <li><a href="features.html" target="_blank">서비스 소개</a></li>
+                <li><a href="api-library.html" target="_blank">API 라이브러리</a></li>
+                <li><a href="pricing.html" target="_blank">구독 요금제</a></li>
+                <li><a href="community.html" target="_blank">자유게시판</a></li>
+                <li><a href="community.html#jobs" target="_blank">구인공고</a></li>
+            </ul>
+        </nav>
+        <div class="header-btns">
+            <a href="pricing.html" target="_blank" class="header-btn premium-btn"><i class="fa-solid fa-bolt" style="margin-right: 6px;"></i>프리미엄 구독</a>
+            <a href="api-library.html" target="_blank" class="header-btn">지금 시작하기</a>
+        </div>
+    </header>
+    <main>
+<section id="api-library" style="background-color: #ffffff; border-radius: 40px; margin-bottom: 40px; box-shadow: 0 10px 50px rgba(0,0,0,0.02);">
+            <h2 class="section-title">글로벌 핵심 <span>API 라이브러리</span></h2>
+            <p class="section-subtitle">공식 개발자 센터로 이동하여 프로젝트에 필요한 키를 직접 생성하거나 프리미엄 자동 연동을 신청하세요.</p>
+            
+            <div class="search-wrapper">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="apiSearch" class="search-input" placeholder="찾으시는 API 서비스명 또는 키워드를 입력하세요 (예: 카카오, 결제, AI)">
+            </div>
+            
+            <div class="grid" id="apiGrid">
+                <div class="card api-card" style="border-top-color: #FEE500;" data-keywords="카카오 kakao 소셜로그인 알림톡 지도 메신저">
+                    <span class="api-tag">국내인기</span>
+                    <div>
+                        <h3><i class="fa-solid fa-comment" style="color: #FEE500; text-shadow: 0 0 2px #ccc;"></i> 카카오 (Kakao)</h3>
+                        <p>소셜 로그인, 카카오톡 메시지(알림톡), 카카오 맵(지도) 연동</p>
+                    </div>
+                    <a href="https://developers.kakao.com/" target="_blank" class="api-link-btn">개발자 센터 가기 &rarr;</a>
+                </div>
+
+                <div class="card api-card" style="border-top-color: #03C75A;" data-keywords="네이버 naver 아이디로그인 검색 클로바 ai">
+                    <span class="api-tag">국내인기</span>
+                    <div>
+                        <h3><i class="fa-solid fa-n" style="color: #03C75A;"></i> 네이버 (Naver)</h3>
+                        <p>네이버 아이디로 로그인, 통합 검색, 클로바(Clova) AI 기능 연동</p>
+                    </div>
+                    <a href="https://developers.naver.com/" target="_blank" class="api-link-btn">개발자 센터 가기 &rarr;</a>
+                </div>
+
+                <div class="card api-card" style="border-top-color: #3b82f6;" data-keywords="포트원 portone 결제 pg 토스 이니시스 카드">
+                    <span class="api-tag">결제</span>
+                    <div>
+                        <h3><i class="fa-regular fa-credit-card" style="color: #3b82f6;"></i> 포트원 (PortOne)</h3>
+                        <p>국내외 100여 개 PG사(토스, 이니시스 등) 통합 결제 시스템 연동</p>
+                    </div>
+                    <a href="https://portone.io/" target="_blank" class="api-link-btn">결제 API 연동 &rarr;</a>
+                </div>
+
+                <div class="card api-card" style="border-top-color: #4285F4;" data-keywords="제미나이 gemini 구글 google ai 챗봇 멀티모달">
+                    <span class="api-tag">AI/인공지능</span>
+                    <div>
+                        <h3><i class="fa-brands fa-google" style="color: #4285F4;"></i> 제미나이 (Gemini)</h3>
+                        <p>구글의 최신 멀티모달 AI. 텍스트, 이미지 분석 및 대화형 챗봇 구축</p>
+                    </div>
+                    <a href="https://aistudio.google.com/" target="_blank" class="api-link-btn">AI Studio 가기 &rarr;</a>
+                </div>
+
+                <div class="card api-card" style="border-top-color: #10a37f;" data-keywords="오픈ai openai chatgpt 챗지피티 dall-e 이미지생성">
+                    <span class="api-tag">AI/인공지능</span>
+                    <div>
+                        <h3><i class="fa-solid fa-robot" style="color: #10a37f;"></i> 오픈AI (OpenAI)</h3>
+                        <p>ChatGPT 생성형 언어 모델 및 DALL-E 고해상도 이미지 생성 API</p>
+                    </div>
+                    <a href="https://platform.openai.com/" target="_blank" class="api-link-btn">API Key 발급 &rarr;</a>
+                </div>
+
+                <div class="card api-card" style="border-top-color: #0050ff;" data-keywords="토스 페이먼츠 toss payments 결제 정기구독 카드">
+                    <span class="api-tag">결제</span>
+                    <div>
+                        <h3><i class="fa-solid fa-money-bill-transfer" style="color: #0050ff;"></i> 토스페이먼츠</h3>
+                        <p>가장 빠른 정기결제 및 일반 신용카드/간편결제 연동 연동 지원</p>
+                    </div>
+                    <a href="https://www.tosspayments.com/" target="_blank" class="api-link-btn">개발자 센터 가기 &rarr;</a>
+                </div>
+
+                <div class="card api-card" style="border-top-color: #ea4335;" data-keywords="구글맵 google maps 지도 위치 글로벌 gps">
+                    <span class="api-tag">위치/지도</span>
+                    <div>
+                        <h3><i class="fa-solid fa-map-location-dot" style="color: #ea4335;"></i> 구글 맵 (Google Maps)</h3>
+                        <p>글로벌 비즈니스를 위한 전세계 위치 기반 데이터 및 인터랙티브 지도</p>
+                    </div>
+                    <a href="https://mapsplatform.google.com/" target="_blank" class="api-link-btn">콘솔 이동하기 &rarr;</a>
+                </div>
+
+                <div class="card api-card" style="border-top-color: #4a154b;" data-keywords="슬랙 slack 협업툴 알림 봇 자동화 업무">
+                    <span class="api-tag">협업/알림</span>
+                    <div>
+                        <h3><i class="fa-brands fa-slack" style="color: #4a154b;"></i> 슬랙 (Slack API)</h3>
+                        <p>사내 업무 알림 자동화 봇 구축 및 워크스페이스 이벤트 연동 수신</p>
+                    </div>
+                    <a href="https://api.slack.com/" target="_blank" class="api-link-btn">앱 생성 센터 &rarr;</a>
+                </div>
+
+                <div class="card api-card" style="border-top-color: #5865F2;" data-keywords="디스코드 discord 커뮤니티 봇 자동화 알림 유저인증">
+                    <span class="api-tag">협업/알림</span>
+                    <div>
+                        <h3><i class="fa-brands fa-discord" style="color: #5865F2;"></i> 디스코드 (Discord)</h3>
+                        <p>커뮤니티 운영 자동화 봇 제작, 실시간 Webhook 알림 시스템 구현</p>
+                    </div>
+                    <a href="https://discord.com/developers/docs/intro" target="_blank" class="api-link-btn">개발자 포털 가기 &rarr;</a>
+                </div>
+
+                <div class="card api-card" style="border-top-color: #0c4da2;" data-keywords="공공데이터 정부 국세청 날씨 상권 공공">
+                    <span class="api-tag">공공데이터</span>
+                    <div>
+                        <h3><i class="fa-solid fa-building" style="color: #0c4da2;"></i> 공공데이터포털</h3>
+                        <p>대한민국 정부 제공 상권 분석, 날씨예보, 사업자등록 상태조회 등</p>
+                    </div>
+                    <a href="https://www.data.go.kr/" target="_blank" class="api-link-btn">국가 데이터 허브 &rarr;</a>
+                </div>
+
+                <div class="card api-card" style="border-top-color: #ff9900;" data-keywords="aws 아마존 클라우드 s3 이미지서버 인프라">
+                    <span class="api-tag">인프라/클라우드</span>
+                    <div>
+                        <h3><i class="fa-brands fa-aws" style="color: #ff9900;"></i> AWS (Amazon Web Services)</h3>
+                        <p>클라우드 이미지 서버(S3), 컴퓨팅 인프라(EC2) 제어용 글로벌 API</p>
+                    </div>
+                    <a href="https://aws.amazon.com/" target="_blank" class="api-link-btn">AWS 콘솔 바로가기 &rarr;</a>
+                </div>
+
+                <div class="card api-card" style="border-top-color: #24292e;" data-keywords="깃허브 github 개발 소스코드 배포 자동화">
+                    <span class="api-tag">개발자동화</span>
+                    <div>
+                        <h3><i class="fa-brands fa-github" style="color: #24292e;"></i> 깃허브 (GitHub API)</h3>
+                        <p>레포지토리 관리, 소스 코드 변경점 감지 및 CI/CD 워크플로우 자동화</p>
+                    </div>
+                    <a href="https://docs.github.com/en/rest" target="_blank" class="api-link-btn">개발자 도큐먼트 &rarr;</a>
+                </div>
+            </div>
+                <div class="card api-card" style="border-top-color: #795723;" data-keywords="더많은 API api 라이브러리 추가 예정">
+                    <span class="api-tag"></span>
+                    <div>
+                        <h3><i class="fa-brands fa-aws" style="color: #ff9900;"></i> 더많은 API 사이트 연결예정</h3>
+                        <p></p>
+                    </div>
+                    <a href="#" target="_blank" class="api-link-btn">기다려주세요... &rarr;</a>
+                </div>
+        </section>
+    </main>
+<footer>
+        <div>
+            <div class="footer-logo">API BLOCK</div>
+            <p>창업자를 위한 기술 연결 및 자동화 통합 관리 허브. © 2026 API BLOCK. All rights reserved.</p>
+            <p style="margin-top: 10px;">이메일: contact@apiblock.io | 전화: 02-1234-5678</p>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('apiSearch').addEventListener('input', function(e) {
+            const query = e.target.value.toLowerCase().trim();
+            document.querySelectorAll('#apiGrid .api-card').forEach(card => {
+                const keywords = card.getAttribute('data-keywords').toLowerCase();
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                const desc = card.querySelector('p').textContent.toLowerCase();
+                card.style.display = (keywords.includes(query) || title.includes(query) || desc.includes(query)) ? 'flex' : 'none';
+            });
+        });
+    </script>
+</body>
+</html>
